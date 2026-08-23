@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this software and the official SenseNova-U1 paper at https://doi.org/10.48550/arXiv.2605.12500."
+title: "SenseNova MLX: Local text-to-image inference on Apple silicon"
+type: software
+version: 0.2.0
+license: Apache-2.0
+authors:
+  - name: "SenseNova MLX contributors"

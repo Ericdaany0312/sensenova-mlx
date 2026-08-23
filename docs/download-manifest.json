@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "total_bytes": 51042331251,
+  "repositories": [
+    {
+      "name": "formal-base",
+      "repository": "SenseNova/SenseNova-U1.5-8B-MoT",
+      "revision": "1c75534f02a734f7bb6319a16fd82a67769d12bb",
+      "resolve_base": "https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT/resolve/1c75534f02a734f7bb6319a16fd82a67769d12bb",
+      "local_prefix": "",
+      "files": [
+        {"name": ".gitattributes", "size": 2175, "sha256": "198489c376616f3139a593523a3d34e944484bdb15bcc8d6a5ef4468091d8de4"},
+        {"name": "added_tokens.json", "size": 8005, "sha256": "d0ff3acec259fabfafc1ffa67638aeaf58203e5e604648fb44f072e4efe040c4"},
+        {"name": "config.json", "size": 2631, "sha256": "6497591f64cb0dd6917fbb10c0cd13024e5817179a9aa3700998eb137a553d6b"},
+        {"name": "configuration.json", "size": 64, "sha256": "625c81a3527ce4f7a739854b431f380a987dc4af5e07e099b568e50e2e3b248c"},
+        {"name": "merges.txt", "size": 1670344, "sha256": "455e0caaa06abffc663e9282dfe71dde07fd1991eaf24146bf08793c4dba4497"},
+        {"name": "model-00001-of-00016.safetensors", "size": 105413672, "sha256": "3a6c016a43a782da79e4c69b0eb9ef9ef2b929f74913146eb5f642bd8984b410"},
+        {"name": "model-00005-of-00016.safetensors", "size": 162434760, "sha256": "c1716a331e5293bc7c4fbf687388fa26043781f7910db2063edc17657e9d1566"},
+        {"name": "model-00006-of-00016.safetensors", "size": 7120064448, "sha256": "5f373bb4710af83b50c94faf348f08e56fddaf2aa868e3c5cfa9ab014eba4ab9"},
+        {"name": "model-00007-of-00016.safetensors", "size": 4630728192, "sha256": "4855daa0dcb29f49ed660ebfa9e6f00da8503b03aeaba01ee96dcb3f40dae1ff"},
+        {"name": "model-00008-of-00016.safetensors", "size": 4630728248, "sha256": "d74ead8dd35eeefd2d493496318435d00edeb7243ba33eec9950bb5581b3c0ec"},
+        {"name": "model-00009-of-00016.safetensors", "size": 4630728296, "sha256": "825cd519602c1d7ef6a0b839772fdadecf64c6ce468ba4fdb3fe07e5406dffc2"},
+        {"name": "model-00010-of-00016.safetensors", "size": 4630728296, "sha256": "18e94914ab4c7353954cbadef021c43072b36a5d70ac6f20d9d1e5ad87b66f59"},
+        {"name": "model-00011-of-00016.safetensors", "size": 4630728296, "sha256": "54af6c2750912cf5c79555d9c6746db2c9e0dbddd288ed22e4fc39057ca2a52c"},
+        {"name": "model-00012-of-00016.safetensors", "size": 4630728296, "sha256": "9641bad8a7bb3e7d37a1c4044451a6acdcf246c8e95b564ccbd79d7bd50c0e11"},
+        {"name": "model-00013-of-00016.safetensors", "size": 4630728296, "sha256": "60aa3d2c16d7d2e21e494f6098c0dcbd8b8ebc03c5d349ea145f8517c3b5cff1"},
+        {"name": "model-00014-of-00016.safetensors", "size": 4630728296, "sha256": "c83dacc6e0e37c4be3996ef2ade29a1703485d8d46e6d6efc052cc6f7aef9879"},
+        {"name": "model-00015-of-00016.safetensors", "size": 4244835448, "sha256": "b3f5a68852260476ab79a92fac3365dbde1766d56d18c8e392cc6da26f2840f3"},
+        {"name": "model-00016-of-00016.safetensors", "size": 1543578408, "sha256": "05f14b29768d6059a1110fd91976c408dca03d5f324c4747374053fe3bff17be"},
+        {"name": "model.safetensors.index.json", "size": 113419, "sha256": "ca9052754586889085aba2a12bf1a6a7638c64e1ee6bd0160d6c9f877fa987a2"},
+        {"name": "README.md", "size": 8622, "sha256": "cf56857f5cca44c45353e015bb0b4da7ebc5449c6473a0af2aaa9f9ed8b345cb"},
+        {"name": "README_CN.md", "size": 6742, "sha256": "80a90331f0f3406e201905b3588a4b687f8c977e19996a8a81462acadb1efc53"},
+        {"name": "special_tokens_map.json", "size": 39951, "sha256": "529306ff26be5cf190b4d96781e63c7dccd03ef0a39f87c0f1289d2d5a67a02f"},
+        {"name": "tokenizer_config.json", "size": 63546, "sha256": "7433b95cec590c7d687259e81bca1bc4630ff39773dbf7f30f7df27a99748077"},
+        {"name": "vocab.json", "size": 3383407, "sha256": "87a257b04b17642a0688c98cd1df89c398bda4fee532d6f88b38a659ecb4ac8d"}
+      ]
+    },
+    {
+      "name": "formal-8step-lora",
+      "repository": "SenseNova/SenseNova-U1.5-8B-MoT-LoRAs",
+      "revision": "da0b25652ee8f8b447bf817e4bfdbb4221d521ec",
+      "resolve_base": "https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT-LoRAs/resolve/da0b25652ee8f8b447bf817e4bfdbb4221d521ec",
+      "local_prefix": "lora",
+      "files": [
+        {"name": ".gitattributes", "size": 2075, "sha256": "247a3cfc672484dd40bdf07af0f83ee7a4457e9a995dadb47eedc36c630103b6"},
+        {"name": "configuration.json", "size": 64, "sha256": "625c81a3527ce4f7a739854b431f380a987dc4af5e07e099b568e50e2e3b248c"},
+        {"name": "README.md", "size": 10018, "sha256": "b8bd28df0dac1b7c3cb3d0709fa75bcc276a3113a3eda7a565c5b078791234ff"},
+        {"name": "SenseNova-U1.5-8B-MoT-LoRA-8step.safetensors", "size": 814867236, "sha256": "3ef32180cdf1e30a870a83f4f136e897ea50b7ee467f863d75633464ebb25708"}
+      ]
+    }
+  ]
+}

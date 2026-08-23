@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "measured_at": "2026-08-22",
+  "hardware": "Apple M5 Max, 40-core GPU, 128 GB unified memory",
+  "runtime": {
+    "python": "3.12",
+    "mlx": "0.32.1",
+    "device": "MLX GPU",
+    "pytorch_runtime_dependency": false
+  },
+  "formal_weights": {
+    "base_revision": "1c75534f02a734f7bb6319a16fd82a67769d12bb",
+    "lora_revision": "da0b25652ee8f8b447bf817e4bfdbb4221d521ec",
+    "files": 28,
+    "bytes": 51042331251,
+    "sha256_verified": true
+  },
+  "real_layer0_parity": {
+    "prefix_cosine": 0.9999977709028443,
+    "generation_with_prefix_cache_cosine": 0.999999886915494,
+    "minimum_cosine": 0.999,
+    "passed": true
+  },
+  "runs": [
+    {
+      "mode": "base",
+      "size": "1024x1024",
+      "steps": 1,
+      "seconds_including_load": 20.624,
+      "mlx_peak_bytes": 34557697408,
+      "swap_delta_bytes": 0,
+      "byte_identical_rerun": true
+    },
+    {
+      "mode": "base",
+      "size": "1024x1024",
+      "steps": 50,
+      "seconds_including_load": 85.908,
+      "mlx_peak_bytes": 35374353648,
+      "swap_delta_bytes": 0,
+      "byte_identical_rerun": true
+    },
+    {
+      "mode": "lora-8step",
+      "size": "1024x1024",
+      "steps": 8,
+      "seconds_including_load": 25.921,
+      "mlx_peak_bytes": 36146820096,
+      "swap_delta_bytes": 0
+    },
+    {
+      "mode": "lora-8step",
+      "evidence_label": "locally measured on the listed hardware",
+      "prompt": "一只戴着红围巾的猫，坐在雨后的上海弄堂，电影摄影，雨水倒影，细节丰富",
+      "seed": 42,
+      "size": "2048x2048",
+      "steps": 8,
+      "seconds_including_load": 44.084,
+      "mlx_peak_bytes": 36922187276,
+      "swap_delta_bytes": 0,
+      "sample_sha256": "0f2ec8739f8ecd8f4a1fd43e7de1bd54e8b318bd9e47aa195580bc5150211aec"
+    }
+  ]
+}

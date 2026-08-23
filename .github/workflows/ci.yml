@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  macos-runtime:
+    runs-on: macos-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: python -m pip install uv==0.11.12
+
+      - name: Create locked environment
+        run: uv sync --frozen --python 3.12
+
+      - name: Run no-weight runtime tests
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          .venv/bin/python -m unittest \
+            tests.test_config_flow tests.test_download tests.test_generate_cli \
+            tests.test_packaging tests.test_release_audit tests.test_rope_attention \
+            tests.test_server tests.test_weights
+
+      - name: Build wheel and sdist
+        run: uv build
+
+      - name: Audit release archives
+        run: .venv/bin/python tools/release_audit.py dist/*.whl dist/*.tar.gz
+
+      - name: Confirm CLI entry point
+        run: .venv/bin/sensenova-mlx --help
+
+# CI deliberately does not download the 47.537 GiB checkpoint or claim formal
+# end-to-end coverage. Those measurements are recorded separately under docs/.

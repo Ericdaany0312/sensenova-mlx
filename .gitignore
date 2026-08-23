@@ -1,0 +1,43 @@
+.DS_Store
+.venv/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+*.partial
+*.tmp
+*~
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+id_rsa*
+id_ed25519*
+
+# Model weights and caches are never source assets
+.cache/
+model/
+models/
+*.bin
+*.ckpt
+*.gguf
+*.pt
+*.pth
+*.safetensors
+
+# Generated, private, and release-only state
+artifacts/
+dist/
+release-assets/
+PROGRESS.md
+SPEC.md
+*.profile.json
+*.pdf
+*.pptx
+*.png
+!docs/assets/showcase.png

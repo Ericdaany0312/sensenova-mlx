@@ -1,0 +1,45 @@
+[project]
+name = "sensenova-mlx"
+version = "0.2.0"
+description = "MLX text-to-image runtime for the formal SenseNova-U1.5-8B-MoT checkpoint"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { text = "Apache-2.0" }
+dependencies = [
+  "huggingface-hub>=0.34,<2",
+  "mlx==0.32.1",
+  "numpy>=2,<3",
+  "pillow>=11,<13",
+  "safetensors>=0.5,<1",
+  "transformers>=4.57.1,<6",
+]
+
+[project.optional-dependencies]
+parity = ["torch==2.8.0"]
+
+[project.scripts]
+sensenova-mlx = "sensenova_mlx.generate:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sensenova_mlx"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"docs/download-manifest.json" = "sensenova_mlx/data/download-manifest.json"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.venv",
+  "/artifacts",
+  "/dist",
+  "/PROGRESS.md",
+  "/release-assets",
+  "/SPEC.md",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"

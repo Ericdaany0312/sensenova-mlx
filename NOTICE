@@ -1,0 +1,21 @@
+SenseNova MLX
+Copyright 2026 SenseNova MLX contributors
+
+This product is licensed under the Apache License, Version 2.0.
+
+The implementation follows the architecture and inference semantics documented
+by the Apache-2.0-licensed OpenSenseNova/SenseNova-U1 reference implementation,
+frozen for this port at commit 35fb2fc520869aa09223a819882abdb3dc328ecd.
+The upstream project is available at https://github.com/OpenSenseNova/SenseNova-U1.
+Upstream copyright (c) SenseNovaLM contributors.
+
+SenseNova model weights and LoRA adapters are separate downloads. They are not
+included in this source distribution, wheel, or sdist. Users must review the
+license and usage terms published with each official model repository.
+
+This project depends on third-party libraries, including MLX, NumPy, Pillow,
+Safetensors, Transformers, and Hugging Face Hub. Their licenses are distributed
+with their respective packages.
+
+SenseNova and other product names may be trademarks of their respective owners.
+This project is an independent MLX port and is not an official upstream release.
