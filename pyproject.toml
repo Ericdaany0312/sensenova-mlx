@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-parity = ["torch==2.8.0"]
+parity = ["torch==2.14.0"]
 
 [project.scripts]
 sensenova-mlx = "sensenova_mlx.generate:main"
