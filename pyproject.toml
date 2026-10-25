@@ -9,7 +9,7 @@ dependencies = [
   "huggingface-hub>=0.34,<2",
   "mlx==0.32.1",
   "numpy>=2,<3",
-  "pillow>=11,<13",
+  "pillow>=11,<14",
   "safetensors>=0.5,<1",
   "transformers>=4.57.1,<6",
 ]
